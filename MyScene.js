@@ -6,8 +6,6 @@ import { GUI } from '../libs/dat.gui.module.js'
 import { TrackballControls } from '../libs/TrackballControls.js'
 
 // Clases de mi proyecto
-
-import { Grapadora } from './Grapadora.js'
 import {Armario} from './Armario.js'
 
  
