@@ -7,8 +7,8 @@ const app = express();
    app.use(express.static(filePath));
   
 
-const port = 3000; // Puerto en el que el servidor escuchará las solicitudes
+const port = process.env.PORT; // Puerto en el que el servidor escuchará las solicitudes
 
 app.listen(port, () => {
-  console.log(`Servidor en funcionamiento en http://localhost:${port}`);
+  console.log(`Servidor en funcionamiento en http://localhost:${process.env.PORT}`);
 });
