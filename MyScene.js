@@ -61,7 +61,7 @@ class MyScene extends THREE.Scene {
     //   Los planos de recorte cercano y lejano
     this.camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
     // También se indica dónde se coloca
-    this.camera.position.set (6, 3, 6);
+    this.camera.position.set (0, 3, 400);
     // Y hacia dónde mira
     var look = new THREE.Vector3 (0,0,0);
     this.camera.lookAt(look);
@@ -142,7 +142,7 @@ class MyScene extends THREE.Scene {
     // Si no se le da punto de mira, apuntará al (0,0,0) en coordenadas del mundo
     // En este caso se declara como   this.atributo   para que sea un atributo accesible desde otros métodos.
     this.spotLight = new THREE.SpotLight( 0xffffff, this.guiControls.lightIntensity );
-    this.spotLight.position.set( 60, 60, 100 );
+    this.spotLight.position.set( 0, 60, 400 );
     this.add (this.spotLight);
   }
   
